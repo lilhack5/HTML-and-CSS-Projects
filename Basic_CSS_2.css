@@ -1,0 +1,13 @@
+p {
+	background-color: purple;
+	color: gold;
+	font-weight: bold;
+	text-align: center;
+}
+/* used this for school colors*/
+
+h1 {
+	text-align: center;
+	color: gold;
+	text-shadow: 5px 5px purple;
+}
