@@ -2,24 +2,27 @@
 This will be for any Tech Academy HTML and CSS work.
 
 ## Projects
-
-Movie Theater Site
-
-With this page I used bootstrap to make my webpage that contains a navbar, imagage
-containers and a form.
-
-Dog Page
-
-I made a one page website that utitlized embeded videos and links to navigate through 
-the site. I used pictures and a form as well.
-
-Sharks Page
-
-I used some of  the players from the San Jose Sharks to use as thumbnails. I also 
-used a picture in the background using css. A fixed navbar to jump to the different 
-areas on the site and a form to contact someone.
-
-Apex Legends Page
-
-I used an embeded video of my favorite steamer and a link to his twitch page. I used
-some old code from what I knew from 20 years ago to style it best I could.
+ 
+ Movie Theatre site
+ 
+ One Page
+ 
+ Sharks Page
+ 
+ Apex page
+ 
+ ### Movie Theatre Site
+ 
+ This page was made using bootsrap and shows a style of a form and dropdowns.
+ 
+ ### One page Website
+ 
+ With this page I used dog pictures and embed dog vidoes with a nave bar. Styled with CSS.
+ 
+ ### Sharks page
+ I used this as a chance to show some of the San Jose Sharks that are on the team this year. It is styled 
+ with CSS and has a navbar, imagine containers and a form.
+ 
+ ### Apex page
+ This was one of my first pages done in 20 years. I used some older code mixed with some new code. I embed a video
+ a link to another website and a footer to go between a couple mixed pages.

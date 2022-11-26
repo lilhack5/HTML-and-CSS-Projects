@@ -8,9 +8,9 @@
 	<!-- this is how you add a comment not on actual page -->
 		<body>
 			<!-- NAV -->
-			<div>
-				<div>
-					<ul>
+			<div class="wrap">
+				<div class="menu-container">
+					<ul class="menu">
 						<a href="#home" id="link"><li>Home</li></a>
 						<a href="#gallery" id="link"><li>Gallery</li></a>
 						<a href="#videos" id="link"><li>Videos</li></a>
@@ -24,8 +24,8 @@
 			
 				<!-- HOME -->
 				<div id="home">
-					<div>
-						<div>
+					<div class="container">
+						<div class="text-center">
 							<span><h1>The cutest dogs!!!</span>
 						</div>
 					<div>
@@ -41,9 +41,9 @@
 				<div>
 				
 					<!-- Photo Container 1 -->
-					<div>
-						<div>
-							<img src="dog_1.png" alt="">
+					<div class="row">
+						<div class="column">
+							<img src="./images/dog_1small.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="">
 							<div>
 								<h3>Click to enlarge</h3>
 								<p>No cats allowed</p>
@@ -53,9 +53,9 @@
 					<!-- End Photo Container 1 -->
 					
 					<!-- Photo Container 2 -->
-					<div>
-						<div>
-							<img src="dog_2.png" alt="">
+					<div class="row">
+						<div class="column">
+							<img src="./images/dog_2small.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="">
 							<div>
 								<h3>Click to enlarge</h3>
 								<p>No allergies here</p>
@@ -65,9 +65,9 @@
 					<!-- End Photo Container 2 -->
 					
 					<!-- Photo Container 3 -->
-					<div>
-						<div>
-							<img src="dog_3.png" alt="">
+					<div class="row">
+						<div class="column">
+							<img src="./images/dog_3small.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="">
 							<div>
 								<h3>Click to enlarge</h3>
 								<p>Those eyes so beautiful</p>
@@ -77,9 +77,9 @@
 					<!-- End Photo Container 3 -->
 					
 					<!-- Photo Container 4 -->
-					<div>
-						<div>
-							<img src="dog_4.png" alt="">
+					<div class="row">
+						<div class="column">
+							<img src="./images/dog_4small.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="">
 							<div>
 								<h3>Click to enlarge</h3>
 								<p>Just Chillin</p>
@@ -89,9 +89,9 @@
 					<!-- End Photo Container 4 -->
 					
 					<!-- Photo Container 5 -->
-					<div>
-						<div>
-							<img src="dog_5.png" alt="">
+					<div class="row">
+						<div class="column">
+							<img src="./images/dog_5small.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="">
 							<div>
 								<h3>Click to enlarge</h3>
 								<p>Snow day!!!!</p>
@@ -104,11 +104,72 @@
 			</div>
 		</section>
 		<!-- End of gallery -->
+
+		<!-- The Modal/Lightbox-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
 		
+				<div class="mySlides">
+					<div class="numbertext">1 / 5</div>
+					<img src="./images/dog_1.png" style="width:100%" alt="">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">2 / 5</div>
+					<img src="./images/dog_2.png" style="width:100%" alt="">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">3 / 5</div>
+					<img src="./images/dog_3.png" style="width:100%" alt="">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">4 / 5</div>
+					<img src="./images/dog_4.png" style="width:100%" alt="">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">5 /54</div>
+					<img src="./images/dog_5.png" style="width:100%" alt="">
+				</div>
+
+				<!-- Next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="./images/dog_1small.png" onclick="currentSlide(1)" alt="">
+				</div>
+				
+				<div class="column">
+					<img class="demo" src="./images/dog_2small.png" onclick="currentSlide(2)" alt="">
+				</div>
+				
+				<div class="column">
+					<img class="demo" src="./images/dog_3small.png" onclick="currentSlide(3)" alt="">
+				</div>
+				
+				<div class="column">
+					<img class="demo" src="./images/dog_4small.png" onclick="currentSlide(4)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/dog_5small.png" onclick="currentSlide(5)" alt="">
+				</div>
+			</div>
+		</div>
 		
 		<!-- Videos -->
 		<section>
-			<div id="Videos">
+			<div id="videos">
 				<h1>Videos</h1>
 				<div><p>Get ready to smile watching these cutties</P>
 				
@@ -159,6 +220,7 @@
 		</section>
 		<!-- End of videos -->
 		
+		<script src="./JS/one_page_website.js"></script>
 		</body>
 		
 		
@@ -195,7 +257,6 @@
 		</section>
 		<!-- End of Contact info -->
 		
-	<footer>Bryan Hackworth
-			bryhack5@gmail.com
+	<footer>Bryan 
 	</footer>
 </html>
